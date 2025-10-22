@@ -9,8 +9,8 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
 
-    package_name = 'robot_model'
-    urdf_name = "yuelu.urdf"
+    package_name = 'go2w_description'
+    urdf_name = "go2w_description.urdf"
 
     pkg_share = FindPackageShare(package=package_name).find(package_name) 
     urdf_model_path = os.path.join(pkg_share, f'urdf/{urdf_name}')

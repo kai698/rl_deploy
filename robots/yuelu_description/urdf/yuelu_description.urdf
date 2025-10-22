@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/base_link.STL" />
+          filename="package://yuelu_description/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/base_link.STL" />
+          filename="package://yuelu_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/lf0_Link.STL" />
+          filename="package://yuelu_description/meshes/lf0_Link.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/lf0_Link.STL" />
+          filename="package://yuelu_description/meshes/lf0_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -124,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/lf1_Link.STL" />
+          filename="package://yuelu_description/meshes/lf1_Link.STL" />
       </geometry>
       <material
         name="">
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/lf1_Link.STL" />
+          filename="package://yuelu_description/meshes/lf1_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/l_wheel_Link.STL" />
+          filename="package://yuelu_description/meshes/l_wheel_Link.STL" />
       </geometry>
       <material
         name="">
@@ -237,7 +237,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/rf0_Link.STL" />
+          filename="package://yuelu_description/meshes/rf0_Link.STL" />
       </geometry>
       <material
         name="">
@@ -251,7 +251,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/rf0_Link.STL" />
+          filename="package://yuelu_description/meshes/rf0_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -295,7 +295,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/rf1_Link.STL" />
+          filename="package://yuelu_description/meshes/rf1_Link.STL" />
       </geometry>
       <material
         name="">
@@ -309,7 +309,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/rf1_Link.STL" />
+          filename="package://yuelu_description/meshes/rf1_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -353,7 +353,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://robot_model/meshes/r_wheel_Link.STL" />
+          filename="package://yuelu_description/meshes/r_wheel_Link.STL" />
       </geometry>
       <material
         name="">
