@@ -14,7 +14,7 @@ def generate_launch_description():
 
     pkg_share = FindPackageShare(package=package_name).find(package_name) 
     urdf_model_path = os.path.join(pkg_share, f'urdf/{urdf_name}')
-    default_rviz_config_path = os.path.join(pkg_share ,'rviz/urdf.rviz')
+    default_rviz_config_path = os.path.join(pkg_share ,'rviz/yuelu_urdf.rviz')
 
     para_value = ParameterValue(Command(['xacro ', urdf_model_path]), value_type=str)
     rviz_arg = DeclareLaunchArgument(name='rvizconfig', default_value=str(default_rviz_config_path),

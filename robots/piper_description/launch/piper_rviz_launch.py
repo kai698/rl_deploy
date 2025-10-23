@@ -9,12 +9,12 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
 
-    package_name = 'go2w_description'
-    urdf_name = "go2w_description.urdf"
+    package_name = 'piper_description'
+    urdf_name = "piper_description.urdf"
 
     pkg_share = FindPackageShare(package=package_name).find(package_name) 
     urdf_model_path = os.path.join(pkg_share, f'urdf/{urdf_name}')
-    default_rviz_config_path = os.path.join(pkg_share ,'rviz/go2w_urdf.rviz')
+    default_rviz_config_path = os.path.join(pkg_share ,'rviz/piper_urdf.rviz')
 
     para_value = ParameterValue(Command(['xacro ', urdf_model_path]), value_type=str)
     rviz_arg = DeclareLaunchArgument(name='rvizconfig', default_value=str(default_rviz_config_path),

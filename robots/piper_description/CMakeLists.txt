@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(go2w_description)
+project(piper_description)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -12,7 +12,7 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 install(DIRECTORY
-    launch dae rviz urdf
+    launch meshes rviz urdf
     DESTINATION share/${PROJECT_NAME}
 )
 
