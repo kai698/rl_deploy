@@ -1,0 +1,131 @@
+digraph G {
+node [shape=box];
+"base" [label="base"];
+"FL_hip" [label="FL_hip"];
+"FL_thigh" [label="FL_thigh"];
+"FL_calf" [label="FL_calf"];
+"FL_calflower" [label="FL_calflower"];
+"FL_calflower1" [label="FL_calflower1"];
+"FL_foot" [label="FL_foot"];
+"FL_foot_motor" [label="FL_foot_motor"];
+"FR_hip" [label="FR_hip"];
+"FR_thigh" [label="FR_thigh"];
+"FR_calf" [label="FR_calf"];
+"FR_calflower" [label="FR_calflower"];
+"FR_calflower1" [label="FR_calflower1"];
+"FR_foot" [label="FR_foot"];
+"FR_foot_motor" [label="FR_foot_motor"];
+"Head_upper" [label="Head_upper"];
+"Head_lower" [label="Head_lower"];
+"RL_hip" [label="RL_hip"];
+"RL_thigh" [label="RL_thigh"];
+"RL_calf" [label="RL_calf"];
+"RL_calflower" [label="RL_calflower"];
+"RL_calflower1" [label="RL_calflower1"];
+"RL_foot" [label="RL_foot"];
+"RL_foot_motor" [label="RL_foot_motor"];
+"RR_hip" [label="RR_hip"];
+"RR_thigh" [label="RR_thigh"];
+"RR_calf" [label="RR_calf"];
+"RR_calflower" [label="RR_calflower"];
+"RR_calflower1" [label="RR_calflower1"];
+"RR_foot" [label="RR_foot"];
+"RR_foot_motor" [label="RR_foot_motor"];
+"arm_base" [label="arm_base"];
+"link1" [label="link1"];
+"link2" [label="link2"];
+"link3" [label="link3"];
+"link4" [label="link4"];
+"link5" [label="link5"];
+"link6" [label="link6"];
+"hand_cam" [label="hand_cam"];
+"link7" [label="link7"];
+"link8" [label="link8"];
+"imu" [label="imu"];
+"radar" [label="radar"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base" -> "FL_hip_joint" [label="xyz: 0.1934 0.0465 0 \nrpy: 0 -0 0"]
+"FL_hip_joint" -> "FL_hip"
+"FL_hip" -> "FL_thigh_joint" [label="xyz: 0 0.0955 0 \nrpy: 0 -0 0"]
+"FL_thigh_joint" -> "FL_thigh"
+"FL_thigh" -> "FL_calf_joint" [label="xyz: 0 0 -0.213 \nrpy: 0 -0 0"]
+"FL_calf_joint" -> "FL_calf"
+"FL_calf" -> "FL_calflower_joint" [label="xyz: 0.02 0 -0.148 \nrpy: 0 0.05 0"]
+"FL_calflower_joint" -> "FL_calflower"
+"FL_calflower" -> "FL_calflower1_joint" [label="xyz: -0.01 0 -0.04 \nrpy: 0 0.48 0"]
+"FL_calflower1_joint" -> "FL_calflower1"
+"FL_calf" -> "FL_foot_joint" [label="xyz: 0 0 -0.2264 \nrpy: 0 -0 0"]
+"FL_foot_joint" -> "FL_foot"
+"FL_calf" -> "FL_foot_motor_joint" [label="xyz: -0 0.01 -0.2264 \nrpy: 0 -0 0"]
+"FL_foot_motor_joint" -> "FL_foot_motor"
+"base" -> "FR_hip_joint" [label="xyz: 0.1934 -0.0465 0 \nrpy: 0 -0 0"]
+"FR_hip_joint" -> "FR_hip"
+"FR_hip" -> "FR_thigh_joint" [label="xyz: 0 -0.0955 0 \nrpy: 0 -0 0"]
+"FR_thigh_joint" -> "FR_thigh"
+"FR_thigh" -> "FR_calf_joint" [label="xyz: 0 0 -0.213 \nrpy: 0 -0 0"]
+"FR_calf_joint" -> "FR_calf"
+"FR_calf" -> "FR_calflower_joint" [label="xyz: 0.02 0 -0.148 \nrpy: 0 0.05 0"]
+"FR_calflower_joint" -> "FR_calflower"
+"FR_calflower" -> "FR_calflower1_joint" [label="xyz: -0.01 0 -0.04 \nrpy: 0 0.48 0"]
+"FR_calflower1_joint" -> "FR_calflower1"
+"FR_calf" -> "FR_foot_joint" [label="xyz: 0 0 -0.2264 \nrpy: 0 -0 0"]
+"FR_foot_joint" -> "FR_foot"
+"FR_calf" -> "FR_foot_motor_joint" [label="xyz: 0 -0.01 -0.2264 \nrpy: 0 -0 0"]
+"FR_foot_motor_joint" -> "FR_foot_motor"
+"base" -> "Head_upper_joint" [label="xyz: 0.285 0 0.01 \nrpy: 0 -0 0"]
+"Head_upper_joint" -> "Head_upper"
+"Head_upper" -> "Head_lower_joint" [label="xyz: 0.008 0 -0.07 \nrpy: 0 -0 0"]
+"Head_lower_joint" -> "Head_lower"
+"base" -> "RL_hip_joint" [label="xyz: -0.1934 0.0465 0 \nrpy: 0 -0 0"]
+"RL_hip_joint" -> "RL_hip"
+"RL_hip" -> "RL_thigh_joint" [label="xyz: 0 0.0955 0 \nrpy: 0 -0 0"]
+"RL_thigh_joint" -> "RL_thigh"
+"RL_thigh" -> "RL_calf_joint" [label="xyz: 0 0 -0.213 \nrpy: 0 -0 0"]
+"RL_calf_joint" -> "RL_calf"
+"RL_calf" -> "RL_calflower_joint" [label="xyz: 0.02 0 -0.148 \nrpy: 0 0.05 0"]
+"RL_calflower_joint" -> "RL_calflower"
+"RL_calflower" -> "RL_calflower1_joint" [label="xyz: -0.01 0 -0.04 \nrpy: 0 0.48 0"]
+"RL_calflower1_joint" -> "RL_calflower1"
+"RL_calf" -> "RL_foot_joint" [label="xyz: 0 0 -0.2264 \nrpy: 0 -0 0"]
+"RL_foot_joint" -> "RL_foot"
+"RL_calf" -> "RL_foot_motor_joint" [label="xyz: 0 0.01 -0.2264 \nrpy: 0 -0 0"]
+"RL_foot_motor_joint" -> "RL_foot_motor"
+"base" -> "RR_hip_joint" [label="xyz: -0.1934 -0.0465 0 \nrpy: 0 -0 0"]
+"RR_hip_joint" -> "RR_hip"
+"RR_hip" -> "RR_thigh_joint" [label="xyz: 0 -0.0955 0 \nrpy: 0 -0 0"]
+"RR_thigh_joint" -> "RR_thigh"
+"RR_thigh" -> "RR_calf_joint" [label="xyz: 0 0 -0.213 \nrpy: 0 -0 0"]
+"RR_calf_joint" -> "RR_calf"
+"RR_calf" -> "RR_calflower_joint" [label="xyz: 0.02 0 -0.148 \nrpy: 0 0.05 0"]
+"RR_calflower_joint" -> "RR_calflower"
+"RR_calflower" -> "RR_calflower1_joint" [label="xyz: -0.01 0 -0.04 \nrpy: 0 0.48 0"]
+"RR_calflower1_joint" -> "RR_calflower1"
+"RR_calf" -> "RR_foot_joint" [label="xyz: -0 0 -0.2264 \nrpy: 0 -0 0"]
+"RR_foot_joint" -> "RR_foot"
+"RR_calf" -> "RR_foot_motor_joint" [label="xyz: 0 -0.01 -0.2264 \nrpy: 0 -0 0"]
+"RR_foot_motor_joint" -> "RR_foot_motor"
+"base" -> "base2arm" [label="xyz: 0 0 0.06 \nrpy: 0 -0 0"]
+"base2arm" -> "arm_base"
+"arm_base" -> "joint1" [label="xyz: 0 0 0.123 \nrpy: 0 0 -1.5708"]
+"joint1" -> "link1"
+"link1" -> "joint2" [label="xyz: 0 0 0 \nrpy: 1.5708 -0.034907 -1.5708"]
+"joint2" -> "link2"
+"link2" -> "joint3" [label="xyz: 0.28358 0.028726 0 \nrpy: 0 -0 0.0660434"]
+"joint3" -> "link3"
+"link3" -> "joint4" [label="xyz: -0.24221 0.068514 0 \nrpy: -1.5708 -0 1.3826"]
+"joint4" -> "link4"
+"link4" -> "joint5" [label="xyz: 0 0 0 \nrpy: 1.5708 -0 0"]
+"joint5" -> "link5"
+"link5" -> "joint6" [label="xyz: 0 0.091 0.0014165 \nrpy: 0 -1.5708 -1.5708"]
+"joint6" -> "link6"
+"link6" -> "hand_camera_joint" [label="xyz: 0 0.075 0.03 \nrpy: 0 -0.3 1.57"]
+"hand_camera_joint" -> "hand_cam"
+"link6" -> "joint7" [label="xyz: 0 0 0.13503 \nrpy: 1.5708 -0 1.5708"]
+"joint7" -> "link7"
+"link6" -> "joint8" [label="xyz: 0 0 0.13503 \nrpy: -1.5708 -0 1.5708"]
+"joint8" -> "link8"
+"base" -> "imu_joint" [label="xyz: -0.02557 0 0.04232 \nrpy: 0 -0 0"]
+"imu_joint" -> "imu"
+"base" -> "radar_joint" [label="xyz: 0.28945 0 -0.046825 \nrpy: 3.14159 0.263393 3.14159"]
+"radar_joint" -> "radar"
+}
